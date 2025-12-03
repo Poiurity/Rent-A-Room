@@ -1,0 +1,100 @@
+{
+    "tasks": [
+        {
+            "attachments": [
+                {
+                    "id": "ad520a88-4bb9-4cb8-8a0d-02c20f4d69aa",
+                    "type": "ElasticNetworkInterface",
+                    "status": "ATTACHED",
+                    "details": [
+                        {
+                            "name": "subnetId",
+                            "value": "subnet-069ac6bfcdb292f90"
+                        },
+                        {
+                            "name": "networkInterfaceId",
+                            "value": "eni-0bdbee8321e62da0c"
+                        },
+                        {
+                            "name": "macAddress",
+                            "value": "02:6a:d5:69:b6:c1"
+                        },
+                        {
+                            "name": "privateDnsName",
+                            "value": "ip-172-31-19-66.us-west-2.compute.internal"
+                        },
+                        {
+                            "name": "privateIPv4Address",
+                            "value": "172.31.19.66"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "ecs.cpu-architecture",
+                    "value": "arm64"
+                }
+            ],
+            "availabilityZone": "us-west-2b",
+            "capacityProviderName": "FARGATE",
+            "clusterArn": "arn:aws:ecs:us-west-2:682772156888:cluster/rent-a-room-service",
+            "connectivity": "CONNECTED",
+            "connectivityAt": "2025-12-03T05:57:43.625000+00:00",
+            "containers": [
+                {
+                    "containerArn": "arn:aws:ecs:us-west-2:682772156888:container/rent-a-room-service/24edae43350d471b853d91559fdecea6/e45e8960-1cb6-4df2-affc-39ea7721a39a",
+                    "taskArn": "arn:aws:ecs:us-west-2:682772156888:task/rent-a-room-service/24edae43350d471b853d91559fdecea6",
+                    "name": "rent-a-room",
+                    "image": "leeyeonguk/rent-a-room:latest",
+                    "imageDigest": "sha256:95bc63cb3d5ff57c3dff4a237e7af4377e4ca18f4d47a497675bbcb568902444",
+                    "runtimeId": "24edae43350d471b853d91559fdecea6-3599992356",
+                    "lastStatus": "RUNNING",
+                    "networkBindings": [],
+                    "networkInterfaces": [
+                        {
+                            "attachmentId": "ad520a88-4bb9-4cb8-8a0d-02c20f4d69aa",
+                            "privateIpv4Address": "172.31.19.66"
+                        }
+                    ],
+                    "healthStatus": "UNKNOWN",
+                    "cpu": "0"
+                }
+            ],
+            "cpu": "1024",
+            "createdAt": "2025-12-03T05:57:40.306000+00:00",
+            "desiredStatus": "RUNNING",
+            "enableExecuteCommand": false,
+            "group": "service:rent-a-room-task-service-7t5jgtfn",
+            "healthStatus": "UNKNOWN",
+            "lastStatus": "RUNNING",
+            "launchType": "FARGATE",
+            "memory": "3072",
+            "overrides": {
+                "containerOverrides": [
+                    {
+                        "name": "rent-a-room"
+                    }
+                ],
+                "inferenceAcceleratorOverrides": []
+            },
+            "platformVersion": "1.4.0",
+            "platformFamily": "Linux",
+            "pullStartedAt": "2025-12-03T05:57:51.395000+00:00",
+            "pullStoppedAt": "2025-12-03T05:57:55.061000+00:00",
+            "startedAt": "2025-12-03T05:57:55.317000+00:00",
+            "startedBy": "ecs-svc/0622639239337655334",
+            "tags": [],
+            "taskArn": "arn:aws:ecs:us-west-2:682772156888:task/rent-a-room-service/24edae43350d471b853d91559fdecea6",
+            "taskDefinitionArn": "arn:aws:ecs:us-west-2:682772156888:task-definition/rent-a-room-task:1",
+            "version": 3,
+            "ephemeralStorage": {
+                "sizeInGiB": 20
+            },
+            "fargateEphemeralStorage": {
+                "sizeInGiB": 20
+            }
+        }
+    ],
+    "failures": []
+}

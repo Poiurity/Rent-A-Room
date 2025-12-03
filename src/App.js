@@ -28,7 +28,7 @@ function App() {
 
         <nav className="navbar navbar-expand navbar-dark bg-dark">
           <Link to={"/"} className="navbar-brand">
-            Rent A Room
+            Rent A Room by iamlyg9667
           </Link>
           <div className="navbar-nav mr-auto">
             <li className="nav-item">
